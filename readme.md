@@ -1,7 +1,7 @@
 # Hackathon 2025: JobScript
 
 
-![JobScript Logo](/ChatGPT%20Image%20May%209,%202025,%2010_20_05%20AM.png)
+![JobScript Logo](/JobScript-Logo.png)
 
 *Team members: Blanca Altamirano, Alif  Rony, Santiago Gonzalez, Karla Zaldana*
 

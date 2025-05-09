@@ -82,7 +82,7 @@ body {
 
 .tagline {
   font-size: 22px;
-  color: #555;
+  color: white;
   margin-bottom: 50px;
 }
 
@@ -304,3 +304,8 @@ html {
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+#contact {
+  color: white;;
+}
+

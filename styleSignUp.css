@@ -85,4 +85,16 @@ button {
   border-bottom: 1px solid black;
 }
 
+.cursor {
+  color: #B3F8FF;
+  font-weight: bold;
+  animation: blink 0.7s step-end infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  from, to {opacity: 1;}
+  50% {opacity: 0;}
+} 
+
   
