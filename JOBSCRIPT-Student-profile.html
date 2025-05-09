@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="Css/Css/style-student-profile.css" />
+  <link rel="icon" href="Css/Css/images/JOBSCRIPT/final logo image only.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <img src="Css/Css/images/JOBSCRIPT/final logo no txt.png" alt="Jobscript Logo" class="logo">
+    <h2 class="title">Student Sign Up</h2>
+
+    <form id="signupForm" onsubmit="handleSignup(event)">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="location">Location (City, State, ZIP):</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="button-group">
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+    </form>
+
+    <h2 class="title">Already Registered?</h2>
+    <form id="loginForm" onsubmit="handleLogin(event)">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail" required>
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+
+      <div class="button-group">
+        <button type="submit" class="btn secondary">Login</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function handleSignup(e) {
+      e.preventDefault();
+      // Here you can add Firebase logic or form validation
+      // After signup: navigate to resume generator
+      window.location.href = "resume-generator.html";
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      // Login validation logic here
+      // After login: navigate to profile
+      window.location.href = "student-profile.html";
+    }
+  </script>
+</body>
+</html>
