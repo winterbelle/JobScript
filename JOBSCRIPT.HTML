@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOBSCRIPT - Resume & Job Match Portal</title>
+  <link rel="stylesheet" href="Css/Css/STYLEJOBSCRIPT.CSS" />
+  <link rel="icon" href="Css/Css/images/JOBSCRIPT/final logo image only.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="Css/Css/images/JOBSCRIPT/final logo no txt.png" alt="Jobscript Logo" class="logo">
+
+  <!-- Navigation Menu -->
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><input type="text" name="searchbar" maxlength="30" placeholder="Search"></li>
+  </ul>
+
+  <!-- Header -->
+  <header>
+    <h1 class="mainheading">JOBSCRIPT</h1>
+    <p class="tagline">Where skills meet opportunity.</p>
+  </header>
+
+  <!-- Main Buttons -->
+  <main>
+    <div class="btn-container">
+      <a href="JOBSCRIPT-create-resume.html" class="main-btn">Create Resume</a>
+      <a href="JOBSCRIPT-post-job.html" class="main-btn">Post a Job</a>
+    </div>
+  </main>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2><span class="icon">💼</span> About Us</h2>
+    <p>
+      At <strong>Jobscript</strong>, we believe that great opportunities should meet great talent — 
+      quickly and simply. Our platform empowers job seekers to create smart, keyword-optimized resumes 
+      that stand out, while enabling employers to find top candidates efficiently.
+    </p>
+    <p>
+      <span class="icon">📄</span> Create polished resumes in minutes.<br>
+      <span class="icon">🔍</span> Get matched with jobs that suit your skills.<br>
+      <span class="icon">🤝</span> Connect employers with top talent easily.
+    </p>
+    <p>
+      Whether you're starting your career or hiring for one, Jobscript brings simplicity, speed, 
+      and smarter connections to the world of work.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or feedback, feel free to reach out to us at:</p>
+    <p>Email: <a href="mailto:info@jobscript.com">info@jobscript.com</a></p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Job Street, Queens, NY</p>
+    <p>Follow us: Facebook | Twitter | Instagram</p>
+  </section>
+
+  <a href="#top" id="backToTop" title="Go to top">⬆</a>
+
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; font-size: 14px; color: #666;">
+    &copy; 2025 Jobscript. All rights reserved.
+  </footer>
+
+  <script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>
