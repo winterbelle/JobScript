@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Resume - Jobscript</title>
+  <link rel="stylesheet" href="Css/Css/STYLEJOBSCRIPT.CSS">
+  <link rel="icon" href="Css/Css/images/JOBSCRIPT/final logo image only.png" type="image/x-icon">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<body>
+    <!-- Logo -->
+  <img src="Css/Css/images/JOBSCRIPT/final logo no txt.png" alt="Jobscript Logo" class="logo">
+
+  <h2>Create Your Resume</h2>
+  <form id="resumeForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+
+    <label for="education">Education:</label>
+    <input type="text" id="education" required>
+
+    <label for="position">Desired Position:</label>
+    <input type="text" id="position" required>
+
+    <label for="skills">Skills/Keywords:</label>
+    <textarea id="skills" rows="3" required></textarea>
+
+    <label for="experience">Experience:</label>
+    <textarea id="experience" rows="4" required></textarea>
+
+    <label for="template">Choose a Resume Template:</label>
+<div class="template-thumbnails">
+  <label>
+    <input type="radio" name="template" value="classic" checked>
+    <img src="Css/Css/images/JOBSCRIPT/resume template choice- classic.png" alt="Classic Template">
+    <span>Classic</span>
+  </label>
+
+  <label>
+    <input type="radio" name="template" value="modern">
+    <img src="Css/Css/images/JOBSCRIPT/resume template choice- modern.png" alt="Modern Template">
+    <span>Modern</span>
+  </label>
+
+  <label>
+    <input type="radio" name="template" value="minimal">
+    <img src="Css/Css/images/JOBSCRIPT/resume template choice- minimal.png" alt="Minimal Template">
+    <span>Minimal</span>
+  </label>
+</div>
+
+
+    <button type="button" onclick="generateResume()">Generate Resume</button>
+    <button type="button" onclick="downloadResume()">Download Resume</button>
+  </form>
+
+  <div id="output" style="margin-top: 30px;"></div>
+
+  <script src="Javascript/JOBSCRIPT-resume.JS"></script>
+
+</body>
+</html>

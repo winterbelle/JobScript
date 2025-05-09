@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post a Job - Jobscript</title>
+  <link rel="stylesheet" href="Css/Css/STYLEJOBSCRIPT.CSS" />
+  <link rel="icon" href="Css/Css/images/JOBSCRIPT/final logo image only.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Logo -->
+  <img src="Css/Css/images/JOBSCRIPT/final logo no txt.png" alt="Jobscript Logo" class="logo">
+
+  <h2>Post a Job Opening</h2>
+  <form id="jobForm">
+    <label for="company">Company Name:</label>
+    <input type="text" id="company" required>
+
+    <label for="jobTitle">Job Title:</label>
+    <input type="text" id="jobTitle" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" required>
+
+    <label for="description">Job Description:</label>
+    <textarea id="description" rows="4" required></textarea>
+
+    <label for="requirements">Requirements / Keywords:</label>
+    <textarea id="requirements" rows="3" required></textarea>
+
+    <button type="submit">Submit Job</button>
+  </form>
+
+  <div id="jobOutput" style="margin-top: 30px;"></div>
+
+
+
+ <!-- Firebase SDKs FIRST -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+<!-- Initialize Firebase NEXT -->
+<script>
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT.appspot.com",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  // Add anonymous sign-in
+   firebase.auth().signInAnonymously().catch((error) => {
+    console.error("Auth error:", error.message);
+  });
+</script>
+
+<!-- THEN load your script LAST -->
+  <script src="Javascript/JOBSCRIPT-post-job.js"></script>
+
+
+</body>
+</html>
