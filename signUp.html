@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styleSignUp.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Sign Up</h1>
+    <form id="signUpForm">
+      <div class="form-grid">
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Type your first name" name="name" required>
+        </div>
+        <div>
+          <label>Phone number</label>
+          <input type="tel" placeholder="XXX-XXX-XXXX" name="phone" required>
+        </div>
+        <div>
+          <label>Last name</label>
+          <input type="text" placeholder="Type your last name" name="lastname" required>
+        </div>
+        <div>
+          <label>City</label>
+          <input type="text" placeholder="" name="city" required>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Type your email" name="email" required>
+        </div>
+        <div>
+          <label>State</label>
+          <input type="text" placeholder="" name="state" required>
+        </div>
+        <div class="full-width">
+          <label>Password</label>
+          <input type="password" placeholder="******************" name="password" required>
+        </div>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="bottom-links">
+      <a href="#landingPage">Back</a>
+      <a href="#logIn">Or Log In here</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
