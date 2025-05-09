@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle closest-side at center, #3B3B4F, #1E1E2F);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+.container {
+  background-color: white;
+  width: 974px;
+  height: 600px;
+  border-radius: 60px;
+  box-shadow: 4px 4px 25px #06B6D4;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: black;
+  text-shadow: 0px 0px 10px #06B6D4;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 200px;
+  align-self: center;
+}
+
+.bottom-links {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.bottom-links a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+  
