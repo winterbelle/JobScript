@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle closest-side at center, #3B3B4F, #1E1E2F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+  }
+  
+  .container {
+    background-color: white;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px #06B6D4;
+    text-align: center;
+  }
+  
+  .title {
+    color: #000;
+    font-size: 2em;
+    text-shadow: 0 0 5px #06B6D4;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .input-box .icon {
+    margin-right: 10px;
+  }
+  
+  .input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-family: monospace;
+  }
+  
+  .forgot {
+    float: right;
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: black;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-family: monospace;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+  
+  .footer a {
+    color: black;
+  }
+
+  .show-password {
+    margin-top: 8px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styleLogin.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Login</h1>
+    <form id="loginForm">
+      <div class="input-group">
+        <label>Username</label>
+        <div class="input-box">
+          <span class="icon">👤</span>
+          <input type="text" placeholder="Type your username" required />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <div class="input-box">
+          <span class="icon">🔒</span>
+          <input type="password" id="password" placeholder="****************" required />
+        </div>
+        <a href="#" class="forgot">Forgot password?</a>
+        <div class="show-password">
+          <input type="checkbox" id="togglePassword" />
+          <label for="togglePassword">Show Password</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <div class="footer">
+        <a href="#" class="back">Back</a>
+        <a href="#" class="signup">Or Sign Up here</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+  
+    togglePassword.addEventListener('change', () => {
+      passwordInput.type = togglePassword.checked ? 'text' : 'password';
+    });
+  </script>
+
+</body>
+</html>
